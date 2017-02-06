@@ -9,13 +9,15 @@ produces:
   - application/json
 paths:
 
-  /example:
+  /slaves:
     get:
-      operationId: "releng_slavehealth.api.example"
+      operationId: "releng_slavehealth.api.all_slaves"
       responses:
         200:
           description: Trees
-          schema:
+          schema: 
             type: array
-            items:
-              type: string
+            items: 
+              type: array
+              item:
+                type: string

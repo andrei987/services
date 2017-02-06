@@ -5,5 +5,12 @@
 from __future__ import absolute_import
 
 
-def example():
-    return [ "itemA", "itemB" ]
+def all_slaves():
+    return { 
+        "b-linux64-hp-0010": {
+            "elapsed_on_job": "0:07:26",
+        },  
+        "b-linux64-hp-0021": {
+            "elapsed_on_job": "0:15:32",
+        }
+    }   

@@ -1,0 +1,14 @@
+*.db
+*.pyc
+*.swp
+.-rplugin~
+
+/.floo
+/docs/build/
+/result*
+/src/**/*.egg-info/
+/src/**/.coverage
+/src/**/.coverage-html
+/src/**/build
+/src/**/elm-stuff/
+/src/**/node_modules/

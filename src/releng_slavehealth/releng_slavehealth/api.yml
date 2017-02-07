@@ -15,9 +15,12 @@ paths:
       responses:
         200:
           description: Trees
-          schema: 
-            type: array
-            items: 
-              type: array
-              item:
-                type: string
+          schema:
+            type: object
+            properties:
+              server:
+                type: object
+                properties:
+                  service:
+                    type: string 
+              

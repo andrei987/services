@@ -17,3 +17,12 @@ DATABASE_URL = os.environ.get('DATABASE_URL')
 
 SQLALCHEMY_DATABASE_URI = DATABASE_URL
 SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+
+IGNORE_SLAVE_TYPES = ['try-linux64-ec2',
+                      'tst-linux64-ec2',
+                      'tst-linux32-ec2',
+                      't-mavericks-r5',
+                      'b-2008-sm',
+                      'tst-w64-ec2',
+                      'av-linux64']

@@ -21,30 +21,6 @@ paths:
             type: object
             additionalProperties:
               $ref: '#/definitions/Machines'
-    #          type: object
-    #          properties:
-    #            elapsed_on_job :
-    #              type: string
-    #            elapsed_since_job :
-    #              type: string
-    #            elapsed_since_job_secs :
-    #              type: integer
-    #            enabled :
-    #              type: string
-    #            master :
-    #              type: string
-    #            notes : 
-    #              type: string
-    #            row_class : 
-    #              type: string
-    #            slave_class :
-    #              type: string
-    #            slave_state :
-    #              type: string
-    #            starttime :
-    #              type: string
-
-                
                 
 
 
@@ -135,8 +111,14 @@ paths:
 
    # slave.json
   /slave_special:
+#  /slaves/test/slave_type/{slavename}:  #added
     get:
       operationId: "releng_slavehealth.api.get_special_slave"
+#      parameters:  #added
+#        - name: slavename #added
+#          in: path     #added
+#          required: true  #added
+#          type: string    #added
       responses:
         200:
           description: Special Slave
@@ -208,8 +190,9 @@ paths:
                   $ref: '#/definitions/Status'
               metadata:
                 type: object
-                additionalProperties:
-                  $ref: '#/definitions/Metadata' 
+                properties:
+                  generated :
+                    type: string 
 
 
 
@@ -275,9 +258,9 @@ definitions:
         type: string
 
   Metadata:
-    type: object
+    type: object 
     properties:
-      metadata:
+      metadata :
         type: object
         properties:
           generated :
@@ -309,4 +292,4 @@ definitions:
 
 
 
-
+  

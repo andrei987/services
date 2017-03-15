@@ -3,7 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 from __future__ import absolute_import
-
+null = None
+false = False
+true = True
 
 def get_slaves():
     return { 
@@ -19,6 +21,19 @@ def get_slaves():
             "slave_state": "disabled",
             "starttime": "2015-01-15 02:34:41"
         },
+        "t-snow-r4-0001": {
+            "elapsed_on_job": "0:04:42",
+            "elapsed_since_job": "0:07:08",
+            "elapsed_since_job_secs": 428,
+            "enabled": "Yes",
+            "master": "<a href=\"http://buildbot-master107.srv.releng.scl3.mozilla.com:8201/buildslaves/t-snow-r4-0001\">bm107-tests1-macosx</a>",
+            "notes": "",
+            "row_class": "working",
+            "slave_class": "test",
+            "slave_state": "working",
+            "starttime": "2015-01-26 22:37:41"
+        },
+
     }
 
 

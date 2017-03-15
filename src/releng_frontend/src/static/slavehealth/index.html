@@ -227,8 +227,9 @@
  //   var base_url = $('body').data('slavehealth-url')
  //   if (!base_url) { base_url = "https://127.0.0.1:8006"; } 
 //     var state_json = "./json/slave_state_rollup.json";
-    var state_json = base_url + "/slave_state" ;
-    var pending_json = "https://secure.pub.build.mozilla.org/buildapi/pending?format=json";
+    var state_json = base_url + "/slaves_state" ;
+    var pending_json = base_url + "/pendings" ;
+//    var pending_json = "https://secure.pub.build.mozilla.org/buildapi/pending?format=json";
 //    if (local_test == true) {
 //      state_json = "./json/test_json/slave_state_rollup.json";
 //      pending_json = "./json/test_json/pending.json";

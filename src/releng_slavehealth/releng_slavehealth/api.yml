@@ -109,54 +109,54 @@ paths:
    
    
 
-   # slave.json
-  /slave_special:
-#  /slaves/test/slave_type/{slavename}:  #added
-    get:
-      operationId: "releng_slavehealth.api.get_special_slave"
-#      parameters:  #added
-#        - name: slavename #added
-#          in: path     #added
-#          required: true  #added
-#          type: string    #added
-      responses:
-        200:
-          description: Special Slave
-          schema:
-            type: object
-            properties:
-              bitsid:
-                type: integer  
-              envid:
-                type: integer
-              speedid: 
-                type: integer
-#              custom_tplid: null,
-#                type:   
-              enabled:
-                type: boolean
-              distroid:
-                type: integer
-              basedir:
-                type: string 
-              dcid: 
-                type: integer
-#              locked_masterid: null,
-#                type: 
-              purposeid: 
-                type: integer
-#              current_masterid: null
-#                type:
-              notes: 
-                type: string
-              poolid: 
-                type: integer
-              trustid: 
-                type: integer
-              slaveid:
-                type: integer
-              name: 
-                type: string
+#      # slave.json
+#     /slave_special:
+#   #  /slaves/test/slave_type/{slavename}:  #added
+#       get:
+#         operationId: "releng_slavehealth.api.get_special_slave"
+#   #      parameters:  #added
+#   #        - name: slavename #added
+#   #          in: path     #added
+#   #          required: true  #added
+#   #          type: string    #added
+#         responses:
+#           200:
+#             description: Special Slave
+#             schema:
+#               type: object
+#               properties:
+#                 bitsid:
+#                   type: integer  
+#                 envid:
+#                   type: integer
+#                 speedid: 
+#                   type: integer
+#                 custom_tplid: 
+#                   type: [integer, "null"]   
+#                 enabled:
+#                   type: boolean
+#                 distroid:
+#                   type: integer
+#                 basedir:
+#                   type: string 
+#                 dcid: 
+#                   type: integer
+#   #              locked_masterid: null,
+#   #                type: 
+#                 purposeid: 
+#                   type: integer
+#   #              current_masterid: null
+#   #                type:
+#                 notes: 
+#                   type: string
+#                 poolid: 
+#                   type: integer
+#                 trustid: 
+#                   type: integer
+#                 slaveid:
+#                   type: integer
+#                 name: 
+#                   type: string
 
 
 

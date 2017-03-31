@@ -513,25 +513,25 @@ def get_masters():
 
 
 
-def get_special_slave():
-    return {
-        "bitsid": 2,
-        "envid": 5,
-        "speedid": 8,
-        "custom_tplid": null,
-        "enabled": false,
-        "distroid": 12,
-        "basedir": "/builds/slave/",
-        "dcid": 10,
-        "locked_masterid": null,
-        "purposeid": 5,
-        "current_masterid": null,
-        "notes": "Bug 666 - Does this slave actually exist?",
-        "poolid": 24,
-        "trustid": 5,
-        "slaveid": 1,
-        "name": "fake-slave-001"
-   }
+#def get_special_slave():
+#    return {
+#        "bitsid": 2,
+#        "envid": 5,
+#        "speedid": 8,
+#        "custom_tplid": null,
+#        "enabled": false,
+#        "distroid": 12,
+#        "basedir": "/builds/slave/",
+#        "dcid": 10,
+##        "locked_masterid": null,
+#        "purposeid": 5,
+##        "current_masterid": null,
+#        "notes": "Bug 666 - Does this slave actually exist?",
+#        "poolid": 24,
+#        "trustid": 5,
+#        "slaveid": 1,
+#        "name": "fake-slave-001"
+#   }
 
 
 def get_slave_state():

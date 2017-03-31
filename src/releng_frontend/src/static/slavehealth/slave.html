@@ -10,7 +10,7 @@
   <script type="text/javascript" src="./jquery.tablesorter/jquery-1.6.4.min.js"></script>
   <script type="text/javascript" src="./jquery.tablesorter/jquery.tablesorter.js"></script>
   <script type="text/javascript" src="./jquery.tablesorter/Class.create.js"></script>
-  <script type="text/javascript" src="./jquery.tablesorter/jquery-encoder-0.1.0.js"></script>
+  <scripxt type="text/javascript" src="./jquery.tablesorter/jquery-encoder-0.1.0.js"></script>
   <script type="text/javascript" src="./js/bugzilla.js"></script>
   <script type="text/javascript" src="./js/slave_health.js"></script>
 </head>
@@ -145,14 +145,15 @@
       if (isAWSInstance(slavename)) {
         $('button#rebootslave').prop('title','Terminate instance');
       }
-//      slave_json = slavealloc_api_baseurl + "slaves/" + slavename + "?byname=1";
-      var slave_json = base_url + '/slave_special'  
+      slave_json = slavealloc_api_baseurl + "slaves/" + slavename + "?byname=1";
+//      var slave_json = base_url + '/slave_special'  
 //      var slave_json = base_url + '/slaves/' + slaveclass + '/' + slavetype + '/' + slavename 
  
 //      if (local_test) {
 //        slave_json = "./json/test_json/slave.json";
 //      }
-
+//this is used only in development mode,not needed in production
+//always querry slavealloc even in develpment mode
       var master_id = 0;
       $.getJSON(slave_json, function(slave){
         getSlavedata(slave, slaveclass, slavetype, params);
